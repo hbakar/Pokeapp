@@ -1,0 +1,703 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC7B9D5929C88A8E00DECDB5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D5829C88A8E00DECDB5 /* AppDelegate.swift */; };
+		DC7B9D5B29C88A8E00DECDB5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D5A29C88A8E00DECDB5 /* SceneDelegate.swift */; };
+		DC7B9D6529C88A9000DECDB5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9D6329C88A9000DECDB5 /* LaunchScreen.storyboard */; };
+		DC7B9D7029C88B9D00DECDB5 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9D6F29C88B9D00DECDB5 /* Alamofire */; };
+		DC7B9D7329C88BC800DECDB5 /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9D7229C88BC800DECDB5 /* SnapKit */; };
+		DC7B9D7629C88BDB00DECDB5 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9D7529C88BDB00DECDB5 /* Kingfisher */; };
+		DC7B9D7C29C88C9F00DECDB5 /* BaseConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D7B29C88C9F00DECDB5 /* BaseConstant.swift */; };
+		DC7B9D7F29C88CC300DECDB5 /* ServiceConstant.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D7E29C88CC300DECDB5 /* ServiceConstant.swift */; };
+		DC7B9D8229C88D1100DECDB5 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D8129C88D1100DECDB5 /* HomeController.swift */; };
+		DC7B9D8829C8941600DECDB5 /* Snapkit.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D8729C8941600DECDB5 /* Snapkit.swift */; };
+		DC7B9D8B29C894A600DECDB5 /* HomeController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D8A29C894A600DECDB5 /* HomeController+Extension.swift */; };
+		DC7B9D8E29C894F700DECDB5 /* Hero in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9D8D29C894F700DECDB5 /* Hero */; };
+		DC7B9D9129C8959500DECDB5 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9D9029C8959500DECDB5 /* Lottie */; };
+		DC7B9D9529C895FB00DECDB5 /* IQKeyboardManagerSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9D9429C895FB00DECDB5 /* IQKeyboardManagerSwift */; };
+		DC7B9D9A29C897A400DECDB5 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D9929C897A400DECDB5 /* DetailController.swift */; };
+		DC7B9D9F29C898E000DECDB5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D9E29C898E000DECDB5 /* Service.swift */; };
+		DC7B9DA129C899C600DECDB5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DA029C899C500DECDB5 /* ServiceManager.swift */; };
+		DC7B9DA929C89B6300DECDB5 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA329C89B6300DECDB5 /* OpenSans-SemiBold.ttf */; };
+		DC7B9DAA29C89B6300DECDB5 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA429C89B6300DECDB5 /* OpenSans-ExtraBold.ttf */; };
+		DC7B9DAB29C89B6300DECDB5 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA529C89B6300DECDB5 /* OpenSans-Bold.ttf */; };
+		DC7B9DAC29C89B6300DECDB5 /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA629C89B6300DECDB5 /* OpenSans-Medium.ttf */; };
+		DC7B9DAD29C89B6300DECDB5 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA729C89B6300DECDB5 /* OpenSans-Regular.ttf */; };
+		DC7B9DAE29C89B6300DECDB5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */; };
+		DC7B9DB129C89C4800DECDB5 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB029C89C4800DECDB5 /* HomeBuilder.swift */; };
+		DC7B9DB329C8B5F400DECDB5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */; };
+		DC7B9DB529C8C42800DECDB5 /* PokemonModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB429C8C42800DECDB5 /* PokemonModel.swift */; };
+		DC7B9DB729C8C6EC00DECDB5 /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB629C8C6EC00DECDB5 /* HomeTableCell.swift */; };
+		DC7B9DB929C8DB1700DECDB5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */; };
+		DC7B9DBC29C8E29900DECDB5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DBB29C8E29900DECDB5 /* HomeViewModel.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC7B9D5529C88A8E00DECDB5 /* Pokeapp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pokeapp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC7B9D5829C88A8E00DECDB5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DC7B9D5A29C88A8E00DECDB5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		DC7B9D6429C88A9000DECDB5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DC7B9D6629C88A9000DECDB5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC7B9D7B29C88C9F00DECDB5 /* BaseConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseConstant.swift; sourceTree = "<group>"; };
+		DC7B9D7E29C88CC300DECDB5 /* ServiceConstant.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceConstant.swift; sourceTree = "<group>"; };
+		DC7B9D8129C88D1100DECDB5 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		DC7B9D8729C8941600DECDB5 /* Snapkit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Snapkit.swift; sourceTree = "<group>"; };
+		DC7B9D8A29C894A600DECDB5 /* HomeController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeController+Extension.swift"; sourceTree = "<group>"; };
+		DC7B9D9929C897A400DECDB5 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
+		DC7B9D9E29C898E000DECDB5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		DC7B9DA029C899C500DECDB5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
+		DC7B9DA329C89B6300DECDB5 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC7B9DA429C89B6300DECDB5 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DC7B9DA529C89B6300DECDB5 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
+		DC7B9DA629C89B6300DECDB5 /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Medium.ttf"; sourceTree = "<group>"; };
+		DC7B9DA729C89B6300DECDB5 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
+		DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		DC7B9DB029C89C4800DECDB5 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
+		DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		DC7B9DB429C8C42800DECDB5 /* PokemonModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonModel.swift; sourceTree = "<group>"; };
+		DC7B9DB629C8C6EC00DECDB5 /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
+		DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		DC7B9DBB29C8E29900DECDB5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DC7B9D5229C88A8E00DECDB5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B9D9129C8959500DECDB5 /* Lottie in Frameworks */,
+				DC7B9D7629C88BDB00DECDB5 /* Kingfisher in Frameworks */,
+				DC7B9D7029C88B9D00DECDB5 /* Alamofire in Frameworks */,
+				DC7B9D8E29C894F700DECDB5 /* Hero in Frameworks */,
+				DC7B9D7329C88BC800DECDB5 /* SnapKit in Frameworks */,
+				DC7B9D9529C895FB00DECDB5 /* IQKeyboardManagerSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC7B9D4C29C88A8E00DECDB5 = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D5729C88A8E00DECDB5 /* Pokeapp */,
+				DC7B9D5629C88A8E00DECDB5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DC7B9D5629C88A8E00DECDB5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D5529C88A8E00DECDB5 /* Pokeapp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DC7B9D5729C88A8E00DECDB5 /* Pokeapp */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D9B29C8988400DECDB5 /* Network */,
+				DC7B9D6C29C88A9D00DECDB5 /* App */,
+				DC7B9D8929C8944A00DECDB5 /* Resources */,
+				DC7B9D8429C8932300DECDB5 /* Extensions */,
+				DC7B9D7A29C88C8D00DECDB5 /* Constant */,
+				DC7B9D8029C88CFB00DECDB5 /* Scene */,
+				DC7B9D7929C88C8300DECDB5 /* ViewModel */,
+				DC7B9D7829C88C7E00DECDB5 /* Model */,
+				DC7B9D7729C88C7700DECDB5 /* View */,
+				DC7B9D6D29C88AA400DECDB5 /* Support */,
+			);
+			path = Pokeapp;
+			sourceTree = "<group>";
+		};
+		DC7B9D6C29C88A9D00DECDB5 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D5829C88A8E00DECDB5 /* AppDelegate.swift */,
+				DC7B9D5A29C88A8E00DECDB5 /* SceneDelegate.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		DC7B9D6D29C88AA400DECDB5 /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D6329C88A9000DECDB5 /* LaunchScreen.storyboard */,
+				DC7B9D6629C88A9000DECDB5 /* Info.plist */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
+		DC7B9D7729C88C7700DECDB5 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC7B9D7829C88C7E00DECDB5 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DB429C8C42800DECDB5 /* PokemonModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		DC7B9D7929C88C8300DECDB5 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC7B9D7A29C88C8D00DECDB5 /* Constant */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D8529C893C700DECDB5 /* BaseConstant */,
+				DC7B9D7D29C88CB300DECDB5 /* ServiceConstant */,
+				DC7B9D8629C8940300DECDB5 /* SnapkitConstant */,
+			);
+			path = Constant;
+			sourceTree = "<group>";
+		};
+		DC7B9D7D29C88CB300DECDB5 /* ServiceConstant */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D7E29C88CC300DECDB5 /* ServiceConstant.swift */,
+			);
+			path = ServiceConstant;
+			sourceTree = "<group>";
+		};
+		DC7B9D8029C88CFB00DECDB5 /* Scene */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D9729C8978000DECDB5 /* Detail */,
+				DC7B9D9629C8977700DECDB5 /* Home */,
+			);
+			path = Scene;
+			sourceTree = "<group>";
+		};
+		DC7B9D8429C8932300DECDB5 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D8A29C894A600DECDB5 /* HomeController+Extension.swift */,
+				DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */,
+				DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		DC7B9D8529C893C700DECDB5 /* BaseConstant */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D7B29C88C9F00DECDB5 /* BaseConstant.swift */,
+			);
+			path = BaseConstant;
+			sourceTree = "<group>";
+		};
+		DC7B9D8629C8940300DECDB5 /* SnapkitConstant */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D8729C8941600DECDB5 /* Snapkit.swift */,
+			);
+			path = SnapkitConstant;
+			sourceTree = "<group>";
+		};
+		DC7B9D8929C8944A00DECDB5 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */,
+				DC7B9DA229C89B6300DECDB5 /* fonts */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DC7B9D9629C8977700DECDB5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DBA29C8E27B00DECDB5 /* HomeViewModel */,
+				DC7B9DAF29C89C2300DECDB5 /* HomeControllerBuilder */,
+				DC7B9D9829C8978700DECDB5 /* Cell */,
+				DC7B9D8129C88D1100DECDB5 /* HomeController.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		DC7B9D9729C8978000DECDB5 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D9929C897A400DECDB5 /* DetailController.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		DC7B9D9829C8978700DECDB5 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DB629C8C6EC00DECDB5 /* HomeTableCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		DC7B9D9B29C8988400DECDB5 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D9C29C8989000DECDB5 /* Service */,
+				DC7B9D9D29C8989B00DECDB5 /* ServiceManager */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		DC7B9D9C29C8989000DECDB5 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9D9E29C898E000DECDB5 /* Service.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		DC7B9D9D29C8989B00DECDB5 /* ServiceManager */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DA029C899C500DECDB5 /* ServiceManager.swift */,
+			);
+			path = ServiceManager;
+			sourceTree = "<group>";
+		};
+		DC7B9DA229C89B6300DECDB5 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DA329C89B6300DECDB5 /* OpenSans-SemiBold.ttf */,
+				DC7B9DA429C89B6300DECDB5 /* OpenSans-ExtraBold.ttf */,
+				DC7B9DA529C89B6300DECDB5 /* OpenSans-Bold.ttf */,
+				DC7B9DA629C89B6300DECDB5 /* OpenSans-Medium.ttf */,
+				DC7B9DA729C89B6300DECDB5 /* OpenSans-Regular.ttf */,
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
+		DC7B9DAF29C89C2300DECDB5 /* HomeControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DB029C89C4800DECDB5 /* HomeBuilder.swift */,
+			);
+			path = HomeControllerBuilder;
+			sourceTree = "<group>";
+		};
+		DC7B9DBA29C8E27B00DECDB5 /* HomeViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DBB29C8E29900DECDB5 /* HomeViewModel.swift */,
+			);
+			path = HomeViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DC7B9D5429C88A8E00DECDB5 /* Pokeapp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC7B9D6929C88A9000DECDB5 /* Build configuration list for PBXNativeTarget "Pokeapp" */;
+			buildPhases = (
+				DC7B9D5129C88A8E00DECDB5 /* Sources */,
+				DC7B9D5229C88A8E00DECDB5 /* Frameworks */,
+				DC7B9D5329C88A8E00DECDB5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Pokeapp;
+			packageProductDependencies = (
+				DC7B9D6F29C88B9D00DECDB5 /* Alamofire */,
+				DC7B9D7229C88BC800DECDB5 /* SnapKit */,
+				DC7B9D7529C88BDB00DECDB5 /* Kingfisher */,
+				DC7B9D8D29C894F700DECDB5 /* Hero */,
+				DC7B9D9029C8959500DECDB5 /* Lottie */,
+				DC7B9D9429C895FB00DECDB5 /* IQKeyboardManagerSwift */,
+			);
+			productName = Pokeapp;
+			productReference = DC7B9D5529C88A8E00DECDB5 /* Pokeapp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DC7B9D4D29C88A8E00DECDB5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1410;
+				LastUpgradeCheck = 1410;
+				TargetAttributes = {
+					DC7B9D5429C88A8E00DECDB5 = {
+						CreatedOnToolsVersion = 14.1;
+					};
+				};
+			};
+			buildConfigurationList = DC7B9D5029C88A8E00DECDB5 /* Build configuration list for PBXProject "Pokeapp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DC7B9D4C29C88A8E00DECDB5;
+			packageReferences = (
+				DC7B9D6E29C88B9D00DECDB5 /* XCRemoteSwiftPackageReference "Alamofire" */,
+				DC7B9D7129C88BC800DECDB5 /* XCRemoteSwiftPackageReference "SnapKit" */,
+				DC7B9D7429C88BDB00DECDB5 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				DC7B9D8C29C894F700DECDB5 /* XCRemoteSwiftPackageReference "Hero" */,
+				DC7B9D8F29C8959500DECDB5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
+				DC7B9D9329C895FB00DECDB5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+			);
+			productRefGroup = DC7B9D5629C88A8E00DECDB5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DC7B9D5429C88A8E00DECDB5 /* Pokeapp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DC7B9D5329C88A8E00DECDB5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B9DA929C89B6300DECDB5 /* OpenSans-SemiBold.ttf in Resources */,
+				DC7B9D6529C88A9000DECDB5 /* LaunchScreen.storyboard in Resources */,
+				DC7B9DAB29C89B6300DECDB5 /* OpenSans-Bold.ttf in Resources */,
+				DC7B9DAC29C89B6300DECDB5 /* OpenSans-Medium.ttf in Resources */,
+				DC7B9DAD29C89B6300DECDB5 /* OpenSans-Regular.ttf in Resources */,
+				DC7B9DAA29C89B6300DECDB5 /* OpenSans-ExtraBold.ttf in Resources */,
+				DC7B9DAE29C89B6300DECDB5 /* Colors.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DC7B9D5129C88A8E00DECDB5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC7B9D9A29C897A400DECDB5 /* DetailController.swift in Sources */,
+				DC7B9DB529C8C42800DECDB5 /* PokemonModel.swift in Sources */,
+				DC7B9D8829C8941600DECDB5 /* Snapkit.swift in Sources */,
+				DC7B9DBC29C8E29900DECDB5 /* HomeViewModel.swift in Sources */,
+				DC7B9DB929C8DB1700DECDB5 /* UIViewController+Extension.swift in Sources */,
+				DC7B9D5929C88A8E00DECDB5 /* AppDelegate.swift in Sources */,
+				DC7B9DB329C8B5F400DECDB5 /* UIColor+Extension.swift in Sources */,
+				DC7B9DB129C89C4800DECDB5 /* HomeBuilder.swift in Sources */,
+				DC7B9D8B29C894A600DECDB5 /* HomeController+Extension.swift in Sources */,
+				DC7B9D8229C88D1100DECDB5 /* HomeController.swift in Sources */,
+				DC7B9D9F29C898E000DECDB5 /* Service.swift in Sources */,
+				DC7B9DB729C8C6EC00DECDB5 /* HomeTableCell.swift in Sources */,
+				DC7B9D7C29C88C9F00DECDB5 /* BaseConstant.swift in Sources */,
+				DC7B9D5B29C88A8E00DECDB5 /* SceneDelegate.swift in Sources */,
+				DC7B9D7F29C88CC300DECDB5 /* ServiceConstant.swift in Sources */,
+				DC7B9DA129C899C600DECDB5 /* ServiceManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		DC7B9D6329C88A9000DECDB5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DC7B9D6429C88A9000DECDB5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DC7B9D6729C88A9000DECDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DC7B9D6829C88A9000DECDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.5;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DC7B9D6A29C88A9000DECDB5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZK27XD76T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokeapp/Support/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PokeApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inegolbelediye.Pokeapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DC7B9D6B29C88A9000DECDB5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = DZK27XD76T;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Pokeapp/Support/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = PokeApp;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = "";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0.1;
+				PRODUCT_BUNDLE_IDENTIFIER = com.inegolbelediye.Pokeapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DC7B9D5029C88A8E00DECDB5 /* Build configuration list for PBXProject "Pokeapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7B9D6729C88A9000DECDB5 /* Debug */,
+				DC7B9D6829C88A9000DECDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DC7B9D6929C88A9000DECDB5 /* Build configuration list for PBXNativeTarget "Pokeapp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC7B9D6A29C88A9000DECDB5 /* Debug */,
+				DC7B9D6B29C88A9000DECDB5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DC7B9D6E29C88B9D00DECDB5 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DC7B9D7129C88BC800DECDB5 /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		DC7B9D7429C88BDB00DECDB5 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DC7B9D8C29C894F700DECDB5 /* XCRemoteSwiftPackageReference "Hero" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/HeroTransitions/Hero.git";
+			requirement = {
+				branch = develop;
+				kind = branch;
+			};
+		};
+		DC7B9D8F29C8959500DECDB5 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+		DC7B9D9329C895FB00DECDB5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/hackiftekhar/IQKeyboardManager.git";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DC7B9D6F29C88B9D00DECDB5 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9D6E29C88B9D00DECDB5 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+		DC7B9D7229C88BC800DECDB5 /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9D7129C88BC800DECDB5 /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+		DC7B9D7529C88BDB00DECDB5 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9D7429C88BDB00DECDB5 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		DC7B9D8D29C894F700DECDB5 /* Hero */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9D8C29C894F700DECDB5 /* XCRemoteSwiftPackageReference "Hero" */;
+			productName = Hero;
+		};
+		DC7B9D9029C8959500DECDB5 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9D8F29C8959500DECDB5 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
+		};
+		DC7B9D9429C895FB00DECDB5 /* IQKeyboardManagerSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9D9329C895FB00DECDB5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
+			productName = IQKeyboardManagerSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DC7B9D4D29C88A8E00DECDB5 /* Project object */;
+}
