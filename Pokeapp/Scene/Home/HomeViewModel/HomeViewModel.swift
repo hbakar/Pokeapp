@@ -13,7 +13,7 @@ protocol HomeViewModelProtocol: AnyObject
 {
     func fetchPokemons(onSuccess: @escaping(PokemonModel?) ->Void,onError:@escaping(AFError) -> Void,_ limit: Int?)
     
-    // var delegate: PokemonOutput {get set}
+    var delegate: pokeOutput? {get set}
     var pokemons: [Result] {get set}
     var searchData: [Result] {get set}
     var isSearch: Bool {get set}
@@ -21,7 +21,7 @@ protocol HomeViewModelProtocol: AnyObject
 }
 
 final class HomeViewModel: HomeViewModelProtocol {
-    
+ 
     var delegate: pokeOutput?
     var pokemons = [Result]()
     var searchData = [Result]()
@@ -60,7 +60,7 @@ extension HomeViewModel
             error in
             onError(error)
         }
-       , limit: (limit ?? 20))
+       , limit: (limit ?? 2))
     }
 }
 

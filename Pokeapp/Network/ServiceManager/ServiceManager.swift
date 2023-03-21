@@ -13,12 +13,9 @@ final class ServiceManager {
 }
 
 extension ServiceManager {
-    func fetch<T>(path: String, onSuccess: @escaping(T) ->(), onError: (AFError) ->(),_ limit:Int?) where T: Codable {
-        
-        let _limit = String(limit ?? 20)
-     
-        AF.request(path.appending(_limit), encoding: JSONEncoding.default).validate().responseDecodable(of:T.self) { response in
-            
+    func fetch<T>(path: String, onSuccess: @escaping(T) ->(), onError: (AFError) ->(), limit:Int?,name: String?) where T: Codable
+    {
+        AF.request(path,encoding: JSONEncoding.default).validate().responseDecodable(of:T.self) { response in
             guard let model = response.value else { print(response.error as Any); return }
             onSuccess(model)
         }

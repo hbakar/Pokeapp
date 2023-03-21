@@ -36,6 +36,11 @@
 		DC7B9DB729C8C6EC00DECDB5 /* HomeTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB629C8C6EC00DECDB5 /* HomeTableCell.swift */; };
 		DC7B9DB929C8DB1700DECDB5 /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */; };
 		DC7B9DBC29C8E29900DECDB5 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DBB29C8E29900DECDB5 /* HomeViewModel.swift */; };
+		DC7B9DBE29C9B4C400DECDB5 /* PokemonDetailModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DBD29C9B4C400DECDB5 /* PokemonDetailModel.swift */; };
+		DC7B9DC029C9B8A400DECDB5 /* HomeTableCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DBF29C9B8A400DECDB5 /* HomeTableCell+Extension.swift */; };
+		DC7B9DC329C9D78A00DECDB5 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9DC229C9D78A00DECDB5 /* PromiseKit */; };
+		DC7B9DC729CA3E5900DECDB5 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DC629CA3E5900DECDB5 /* DetailViewModel.swift */; };
+		DC7B9DCA29CA471E00DECDB5 /* DetailControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DC929CA471E00DECDB5 /* DetailControllerBuilder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +69,10 @@
 		DC7B9DB629C8C6EC00DECDB5 /* HomeTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableCell.swift; sourceTree = "<group>"; };
 		DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
 		DC7B9DBB29C8E29900DECDB5 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		DC7B9DBD29C9B4C400DECDB5 /* PokemonDetailModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PokemonDetailModel.swift; sourceTree = "<group>"; };
+		DC7B9DBF29C9B8A400DECDB5 /* HomeTableCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTableCell+Extension.swift"; sourceTree = "<group>"; };
+		DC7B9DC629CA3E5900DECDB5 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
+		DC7B9DC929CA471E00DECDB5 /* DetailControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControllerBuilder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +85,7 @@
 				DC7B9D7029C88B9D00DECDB5 /* Alamofire in Frameworks */,
 				DC7B9D8E29C894F700DECDB5 /* Hero in Frameworks */,
 				DC7B9D7329C88BC800DECDB5 /* SnapKit in Frameworks */,
+				DC7B9DC329C9D78A00DECDB5 /* PromiseKit in Frameworks */,
 				DC7B9D9529C895FB00DECDB5 /* IQKeyboardManagerSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -102,13 +112,12 @@
 		DC7B9D5729C88A8E00DECDB5 /* Pokeapp */ = {
 			isa = PBXGroup;
 			children = (
-				DC7B9D9B29C8988400DECDB5 /* Network */,
 				DC7B9D6C29C88A9D00DECDB5 /* App */,
+				DC7B9D9B29C8988400DECDB5 /* Network */,
 				DC7B9D8929C8944A00DECDB5 /* Resources */,
 				DC7B9D8429C8932300DECDB5 /* Extensions */,
 				DC7B9D7A29C88C8D00DECDB5 /* Constant */,
 				DC7B9D8029C88CFB00DECDB5 /* Scene */,
-				DC7B9D7929C88C8300DECDB5 /* ViewModel */,
 				DC7B9D7829C88C7E00DECDB5 /* Model */,
 				DC7B9D7729C88C7700DECDB5 /* View */,
 				DC7B9D6D29C88AA400DECDB5 /* Support */,
@@ -145,15 +154,9 @@
 			isa = PBXGroup;
 			children = (
 				DC7B9DB429C8C42800DECDB5 /* PokemonModel.swift */,
+				DC7B9DBD29C9B4C400DECDB5 /* PokemonDetailModel.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		DC7B9D7929C88C8300DECDB5 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		DC7B9D7A29C88C8D00DECDB5 /* Constant */ = {
@@ -189,6 +192,7 @@
 				DC7B9D8A29C894A600DECDB5 /* HomeController+Extension.swift */,
 				DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */,
 				DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */,
+				DC7B9DBF29C9B8A400DECDB5 /* HomeTableCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -232,6 +236,8 @@
 		DC7B9D9729C8978000DECDB5 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				DC7B9DC829CA470D00DECDB5 /* DetailControllerBuilder */,
+				DC7B9DC529CA3E4900DECDB5 /* DetailViewModel */,
 				DC7B9D9929C897A400DECDB5 /* DetailController.swift */,
 			);
 			path = Detail;
@@ -298,6 +304,22 @@
 			path = HomeViewModel;
 			sourceTree = "<group>";
 		};
+		DC7B9DC529CA3E4900DECDB5 /* DetailViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DC629CA3E5900DECDB5 /* DetailViewModel.swift */,
+			);
+			path = DetailViewModel;
+			sourceTree = "<group>";
+		};
+		DC7B9DC829CA470D00DECDB5 /* DetailControllerBuilder */ = {
+			isa = PBXGroup;
+			children = (
+				DC7B9DC929CA471E00DECDB5 /* DetailControllerBuilder.swift */,
+			);
+			path = DetailControllerBuilder;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -321,6 +343,7 @@
 				DC7B9D8D29C894F700DECDB5 /* Hero */,
 				DC7B9D9029C8959500DECDB5 /* Lottie */,
 				DC7B9D9429C895FB00DECDB5 /* IQKeyboardManagerSwift */,
+				DC7B9DC229C9D78A00DECDB5 /* PromiseKit */,
 			);
 			productName = Pokeapp;
 			productReference = DC7B9D5529C88A8E00DECDB5 /* Pokeapp.app */;
@@ -357,6 +380,7 @@
 				DC7B9D8C29C894F700DECDB5 /* XCRemoteSwiftPackageReference "Hero" */,
 				DC7B9D8F29C8959500DECDB5 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 				DC7B9D9329C895FB00DECDB5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */,
+				DC7B9DC129C9D78A00DECDB5 /* XCRemoteSwiftPackageReference "PromiseKit" */,
 			);
 			productRefGroup = DC7B9D5629C88A8E00DECDB5 /* Products */;
 			projectDirPath = "";
@@ -395,10 +419,14 @@
 				DC7B9DBC29C8E29900DECDB5 /* HomeViewModel.swift in Sources */,
 				DC7B9DB929C8DB1700DECDB5 /* UIViewController+Extension.swift in Sources */,
 				DC7B9D5929C88A8E00DECDB5 /* AppDelegate.swift in Sources */,
+				DC7B9DBE29C9B4C400DECDB5 /* PokemonDetailModel.swift in Sources */,
+				DC7B9DC729CA3E5900DECDB5 /* DetailViewModel.swift in Sources */,
 				DC7B9DB329C8B5F400DECDB5 /* UIColor+Extension.swift in Sources */,
 				DC7B9DB129C89C4800DECDB5 /* HomeBuilder.swift in Sources */,
+				DC7B9DCA29CA471E00DECDB5 /* DetailControllerBuilder.swift in Sources */,
 				DC7B9D8B29C894A600DECDB5 /* HomeController+Extension.swift in Sources */,
 				DC7B9D8229C88D1100DECDB5 /* HomeController.swift in Sources */,
+				DC7B9DC029C9B8A400DECDB5 /* HomeTableCell+Extension.swift in Sources */,
 				DC7B9D9F29C898E000DECDB5 /* Service.swift in Sources */,
 				DC7B9DB729C8C6EC00DECDB5 /* HomeTableCell.swift in Sources */,
 				DC7B9D7C29C88C9F00DECDB5 /* BaseConstant.swift in Sources */,
@@ -664,6 +692,14 @@
 				kind = branch;
 			};
 		};
+		DC7B9DC129C9D78A00DECDB5 /* XCRemoteSwiftPackageReference "PromiseKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/mxcl/PromiseKit.git";
+			requirement = {
+				branch = v6;
+				kind = branch;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -696,6 +732,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = DC7B9D9329C895FB00DECDB5 /* XCRemoteSwiftPackageReference "IQKeyboardManager" */;
 			productName = IQKeyboardManagerSwift;
+		};
+		DC7B9DC229C9D78A00DECDB5 /* PromiseKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DC7B9DC129C9D78A00DECDB5 /* XCRemoteSwiftPackageReference "PromiseKit" */;
+			productName = PromiseKit;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

@@ -11,13 +11,15 @@ import Kingfisher
 
 final class DetailController: UIViewController {
 
-    // - MARK: Properties
+  
+    public var result: Result!
+    
+    var viewModel : DetailViewModelProtocol!    // - MARK: UI Elements
    
     private let imgView : UIImageView = {
         let img = UIImageView()
         return img
     }()
-    
     
     private let lblTitle: UILabel = {
         let lbl = UILabel()
@@ -50,10 +52,21 @@ final class DetailController: UIViewController {
         super.viewDidLoad()
 
         configure()
+        
+        fetchData()
     }
     
     override func viewDidAppear(_ animated: Bool) {
         
+    }
+    
+    init(viewModel: DetailViewModelProtocol) {
+            self.viewModel = viewModel
+            super.init(nibName: nil, bundle: nil)
+        }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
     }
     
 }
@@ -85,5 +98,22 @@ extension DetailController
             make.height.equalTo(200)
         }
        // imgView.kf.setImage(with: "https://placehold.co/600x400/png")!
+    }
+}
+
+// MARK: - Service Extension
+extension DetailController
+{
+    private func fetchData() {
+        
+            viewModel.fetchPokemonsById(onSuccess: { [weak self] data in
+                self?.viewModel.pokemonDetail = data
+                print(data)
+            }, onError: { error in
+                print(error)
+            }, "pikachu")
+       
+        
+     
     }
 }
