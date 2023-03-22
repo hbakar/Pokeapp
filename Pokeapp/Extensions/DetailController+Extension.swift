@@ -16,11 +16,19 @@ extension UILabel {
         textAlignment = .center
     }
     
+    func detailAttrLabel()
+    {
+        numberOfLines = 2
+        textColor = .whiteColor
+        font = UIFont(name: "Inter-Regular", size: 18) ?? UIFont.boldSystemFont(ofSize: 18)
+        textAlignment = .left
+    }
+    
     func detailLabel()
     {
         numberOfLines = 2
         textColor = .gray06
-        font = UIFont(name: "Inter-Regular", size: 24) ?? UIFont.boldSystemFont(ofSize: 24)
+        font = UIFont(name: "Inter-Regular", size: 16) ?? UIFont.boldSystemFont(ofSize: 16)
         textAlignment = .left
     }
 }

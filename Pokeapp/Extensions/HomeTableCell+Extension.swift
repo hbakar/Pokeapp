@@ -26,4 +26,12 @@ extension UIImageView {
         contentMode = .scaleAspectFit
         heroID = "imageView"
     }
+    
+    func homeCellIcon()
+    {
+        layer.cornerRadius = 12
+        clipsToBounds = true
+        contentMode = .scaleAspectFit
+        heroID = "icons"
+    }
 }

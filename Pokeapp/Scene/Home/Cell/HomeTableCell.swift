@@ -60,7 +60,11 @@ class HomeTableCell: UITableViewCell {
     // MARK: - Functions
     func saveModel(model: Result)
     {
-        lblName.text = model.name
+        if let name = model.name
+        {
+            lblName.text = name.capitalized
+        }
+       
         
         var id = ""
         if let path = model.url

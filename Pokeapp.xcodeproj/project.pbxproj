@@ -45,6 +45,7 @@
 		DC7B9DD829CAC9F200DECDB5 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DD729CAC9F200DECDB5 /* Custom.swift */; };
 		DC7B9DDA29CAE1CE00DECDB5 /* arrow-square-right.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DD929CAE1CE00DECDB5 /* arrow-square-right.pdf */; };
 		DC7B9DDC29CAE3A500DECDB5 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DDB29CAE3A500DECDB5 /* star.pdf */; };
+		DC7B9DDE29CB004200DECDB5 /* star2.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DDD29CB004200DECDB5 /* star2.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +82,7 @@
 		DC7B9DD729CAC9F200DECDB5 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 		DC7B9DD929CAE1CE00DECDB5 /* arrow-square-right.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arrow-square-right.pdf"; sourceTree = "<group>"; };
 		DC7B9DDB29CAE3A500DECDB5 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
+		DC7B9DDD29CB004200DECDB5 /* star2.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star2.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -226,6 +228,7 @@
 		DC7B9D8929C8944A00DECDB5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC7B9DDD29CB004200DECDB5 /* star2.pdf */,
 				DC7B9DDB29CAE3A500DECDB5 /* star.pdf */,
 				DC7B9DD929CAE1CE00DECDB5 /* arrow-square-right.pdf */,
 				DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */,
@@ -409,6 +412,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DC7B9D6529C88A9000DECDB5 /* LaunchScreen.storyboard in Resources */,
+				DC7B9DDE29CB004200DECDB5 /* star2.pdf in Resources */,
 				DC7B9DD329CAC6E200DECDB5 /* Inter-ExtraBold.ttf in Resources */,
 				DC7B9DDA29CAE1CE00DECDB5 /* arrow-square-right.pdf in Resources */,
 				DC7B9DD529CAC6E200DECDB5 /* Inter-SemiBold.ttf in Resources */,

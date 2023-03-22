@@ -34,18 +34,22 @@ final class DetailController: UIViewController {
         return lbl
     }()
     
-    private let lblName: UILabel = {
+    private let lblAttr: UILabel = {
         let lbl = UILabel()
-        lbl.detailLabel()
+        lbl.detailAttrLabel()
         return lbl
     }()
-    
-    
     
     private var stViewAbilities: UIStackView = {
         let stView = UIStackView()
         stView.detailAttrStackView()
         return stView
+    }()
+    
+    private var stUIView: UIView = {
+        let vw = UIView()
+        vw.backgroundColor = .gray02
+        return vw
     }()
     
     // MARK: - Life Cycle
@@ -89,7 +93,7 @@ extension DetailController
         self.hero.isEnabled = true
         self.view.backgroundColor = .backgroundColor
         subView()
-        setupImageView()
+        drawDesign()
     }
     
 
@@ -97,12 +101,17 @@ extension DetailController
     private func subView()
     {
         self.view.addSubview(img)
+        
+        self.view.addSubview(lblTitle)
+        
+        self.view.addSubview(lblAttr)
+        
         self.view.addSubview(stViewAbilities)
         
-        self.stViewAbilities.addArrangedSubview(lblTitle)
+      
     }
     
-    private func setupImageView()
+    private func drawDesign()
     {
         img.snp.makeConstraints { make in
             make.leading.equalTo(self.view.snp.leading).inset(16.18)
@@ -113,13 +122,26 @@ extension DetailController
         
         img.hero.id = "imageView"
         
-        stViewAbilities.snp.makeConstraints { make in
+        lblTitle.snp.makeConstraints { make in
             make.left.equalToSuperview().inset(16.18)
             make.right.equalToSuperview().offset(16.18)
             make.top.equalTo(self.img.snp.bottom).offset(16.18)
         }
         
-       
+        lblAttr.text = "ATTRIBUTES"
+        
+        lblAttr.snp.makeConstraints { make in
+            make.left.equalToSuperview().inset(16.18)
+            make.right.equalToSuperview().offset(16.18)
+            make.top.equalTo(self.lblTitle.snp.bottom).offset(16.18)
+        }
+        
+        stViewAbilities.snp.makeConstraints { make in
+            make.left.equalToSuperview().inset(16.18)
+            make.right.equalToSuperview().offset(16.18)
+            make.top.equalTo(self.lblAttr.snp.bottom).offset(16.18)
+        }
+        
     }
     
     private func setGradient()
@@ -137,9 +159,7 @@ extension DetailController
 extension DetailController
 {
     
-    
     private func fetchData() {
-        
             viewModel.fetchPokemonsById(onSuccess: { [weak self] data in
                 self?.viewModel.pokemonDetail = data
                 print(data)
@@ -148,13 +168,12 @@ extension DetailController
                 {
                     if let name = data.name
                     {
-                        self?.lblTitle.text = name
+                        self?.lblTitle.text = name.capitalized
                     }
                     
                     if let abilities = data.abilities
                     {
                         self?.abilityList = abilities
-                        
                         
                         abilities.forEach { ab in
                             let label = UILabel()
@@ -170,6 +189,7 @@ extension DetailController
                             label.detailLabel()
                             
                             self?.stViewAbilities.addArrangedSubview(label)
+                            
                         }
                     }
                    
