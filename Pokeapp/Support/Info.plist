@@ -9,11 +9,11 @@
 	</dict>
 	<key>UIAppFonts</key>
 	<array>
-		<string>OpenSans-Regular</string>
-		<string>OpenSans-Medium</string>
-		<string>OpenSans-Bold</string>
-		<string>OpenSans-SemiBold</string>
-		<string>OpenSans-ExtraBold</string>
+		<string>Inter-Regular</string>
+		<string>Inter-Medium</string>
+		<string>Inter-Bold</string>
+		<string>Inter-SemiBold</string>
+		<string>Inter-ExtraBold</string>
 	</array>
 	<key>UIApplicationSceneManifest</key>
 	<dict>

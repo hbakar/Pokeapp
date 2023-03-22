@@ -15,34 +15,32 @@ final class DetailController: UIViewController {
     public var result: Result!
     
     var viewModel : DetailViewModelProtocol!    // - MARK: UI Elements
+    
+    private var abilityList : [Ability] = []
    
-    private let imgView : UIImageView = {
-        let img = UIImageView()
-        return img
+    private var img : UIImageView = {
+        let imgV = UIImageView()
+        imgV.detailCellImage()
+        return imgV
     }()
     
     private let lblTitle: UILabel = {
         let lbl = UILabel()
-        lbl.numberOfLines = 2
-        lbl.textColor = .gray06
-        lbl.font = UIFont(name: "OpenSans-ExtraBold", size: 18) ?? .systemFont(ofSize: 18)
+        lbl.detailTitle()
         return lbl
     }()
     
     private let lblName: UILabel = {
         let lbl = UILabel()
-        lbl.numberOfLines = 2
-        lbl.textColor = .gray06
-        lbl.font = UIFont(name: "OpenSans-Regular", size: 14) ?? .systemFont(ofSize: 14)
+        lbl.detailLabel()
         return lbl
     }()
     
+    
+    
     private var stViewAbilities: UIStackView = {
         let stView = UIStackView()
-        stView.distribution = .fillEqually
-        stView.spacing = 5
-        stView.axis = .vertical
-        stView.alignment = .fill
+        stView.detailAttrStackView()
         return stView
     }()
     
@@ -51,9 +49,12 @@ final class DetailController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        
+        
         configure()
         
         fetchData()
+        
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -83,32 +84,114 @@ extension DetailController
 extension DetailController
 {
     private func configure() {
+        self.hero.isEnabled = true
         self.view.backgroundColor = .backgroundColor
+        subView()
+        setupImageView()
+    }
+    
+
+    
+    private func subView()
+    {
+        self.view.addSubview(img)
+        self.view.addSubview(stViewAbilities)
         
+        self.stViewAbilities.addArrangedSubview(lblTitle)
     }
     
     private func setupImageView()
     {
-        self.view.addSubview(imgView)
-        
-        imgView.snp.makeConstraints { make in
+        img.snp.makeConstraints { make in
             make.leading.equalTo(self.view.snp.leading)
             make.trailing.equalTo(self.view.snp.trailing)
-            make.top.equalTo(16.18)
-            make.height.equalTo(200)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
+            make.height.equalTo(300)
         }
-       // imgView.kf.setImage(with: "https://placehold.co/600x400/png")!
+        
+        img.hero.id = "imageView"
+        
+        stViewAbilities.snp.makeConstraints { make in
+            make.left.equalToSuperview().inset(16.18)
+            make.right.equalToSuperview().offset(16.18)
+            make.top.equalTo(self.img.snp.bottom).offset(16.18)
+        }
+        
+        
+        
+        /*
+        lblName.snp.makeConstraints { make in
+            make.left.equalToSuperview().inset(16.18)
+            make.right.equalToSuperview().inset(16.18)
+            make.top.equalTo(16.18)
+        }
+         */
+      
+      
     }
 }
 
 // MARK: - Service Extension
 extension DetailController
 {
+    
+    
     private func fetchData() {
         
             viewModel.fetchPokemonsById(onSuccess: { [weak self] data in
                 self?.viewModel.pokemonDetail = data
                 print(data)
+                
+                if let data = data
+                {
+                    if let name = data.name
+                    {
+                        self?.lblTitle.text = name
+                    }
+                    
+                    if let abilities = data.abilities
+                    {
+                        self?.abilityList = abilities
+                        
+                        
+                        abilities.forEach { ab in
+                            let label = UILabel()
+                            
+                            var _name = ""
+                            if let nm = ab.ability?.name
+                            {
+                               _name = nm
+                            }
+                            
+                            label.text = _name
+                            
+                            label.detailLabel()
+                            self?.stViewAbilities.addArrangedSubview(label)
+                        }
+                    }
+                    
+                    
+                   
+                }
+               
+                
+             
+              
+                
+                if let poster = data?.sprites?.frontDefault
+                {
+                    
+                    print(poster)
+                    
+                    let url = URL(string: poster)!
+                    self!.img.kf.setImage(with: url)
+                    
+                  //  imgView.kf.setImage(with: poster)!
+                    
+                   // imgView.kf.setImage(with: poster)
+                }
+                
+             
             }, onError: { error in
                 print(error)
             }, "pikachu")

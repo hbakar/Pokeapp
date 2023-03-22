@@ -26,7 +26,6 @@ extension Constant {
             
             static func fetchPokemonById(_ name: String) -> String
             {
-               
                 "\(ServiceEndPoint.BASE_URL.rawValue)\(ServiceEndPoint.API.rawValue)\(ServiceEndPoint.POKE_DETAIL_URL.rawValue)\(name)"
             }
         }

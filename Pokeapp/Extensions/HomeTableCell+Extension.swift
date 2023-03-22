@@ -12,8 +12,8 @@ import Hero
 extension UILabel {
     func homeCellTitle(){
         numberOfLines = 2
-        textColor = .primaryBlue
-        font = UIFont.boldSystemFont(ofSize: 18)
+        textColor = .whiteColor
+        font = UIFont(name: "Inter-ExtraBold", size: 24) ?? UIFont.boldSystemFont(ofSize: 24)
         heroID = "titleLabel"
     }
 }

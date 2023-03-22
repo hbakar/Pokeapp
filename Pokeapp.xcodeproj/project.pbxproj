@@ -24,11 +24,6 @@
 		DC7B9D9A29C897A400DECDB5 /* DetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D9929C897A400DECDB5 /* DetailController.swift */; };
 		DC7B9D9F29C898E000DECDB5 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9D9E29C898E000DECDB5 /* Service.swift */; };
 		DC7B9DA129C899C600DECDB5 /* ServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DA029C899C500DECDB5 /* ServiceManager.swift */; };
-		DC7B9DA929C89B6300DECDB5 /* OpenSans-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA329C89B6300DECDB5 /* OpenSans-SemiBold.ttf */; };
-		DC7B9DAA29C89B6300DECDB5 /* OpenSans-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA429C89B6300DECDB5 /* OpenSans-ExtraBold.ttf */; };
-		DC7B9DAB29C89B6300DECDB5 /* OpenSans-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA529C89B6300DECDB5 /* OpenSans-Bold.ttf */; };
-		DC7B9DAC29C89B6300DECDB5 /* OpenSans-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA629C89B6300DECDB5 /* OpenSans-Medium.ttf */; };
-		DC7B9DAD29C89B6300DECDB5 /* OpenSans-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA729C89B6300DECDB5 /* OpenSans-Regular.ttf */; };
 		DC7B9DAE29C89B6300DECDB5 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */; };
 		DC7B9DB129C89C4800DECDB5 /* HomeBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB029C89C4800DECDB5 /* HomeBuilder.swift */; };
 		DC7B9DB329C8B5F400DECDB5 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */; };
@@ -41,6 +36,13 @@
 		DC7B9DC329C9D78A00DECDB5 /* PromiseKit in Frameworks */ = {isa = PBXBuildFile; productRef = DC7B9DC229C9D78A00DECDB5 /* PromiseKit */; };
 		DC7B9DC729CA3E5900DECDB5 /* DetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DC629CA3E5900DECDB5 /* DetailViewModel.swift */; };
 		DC7B9DCA29CA471E00DECDB5 /* DetailControllerBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DC929CA471E00DECDB5 /* DetailControllerBuilder.swift */; };
+		DC7B9DCC29CA525B00DECDB5 /* DetailController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DCB29CA525B00DECDB5 /* DetailController+Extension.swift */; };
+		DC7B9DD229CAC6E200DECDB5 /* Inter-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DCD29CAC6E200DECDB5 /* Inter-Regular.ttf */; };
+		DC7B9DD329CAC6E200DECDB5 /* Inter-ExtraBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DCE29CAC6E200DECDB5 /* Inter-ExtraBold.ttf */; };
+		DC7B9DD429CAC6E200DECDB5 /* Inter-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DCF29CAC6E200DECDB5 /* Inter-Bold.ttf */; };
+		DC7B9DD529CAC6E200DECDB5 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DD029CAC6E200DECDB5 /* Inter-SemiBold.ttf */; };
+		DC7B9DD629CAC6E200DECDB5 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DD129CAC6E200DECDB5 /* Inter-Medium.ttf */; };
+		DC7B9DD829CAC9F200DECDB5 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DD729CAC9F200DECDB5 /* Custom.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -57,11 +59,6 @@
 		DC7B9D9929C897A400DECDB5 /* DetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailController.swift; sourceTree = "<group>"; };
 		DC7B9D9E29C898E000DECDB5 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
 		DC7B9DA029C899C500DECDB5 /* ServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServiceManager.swift; sourceTree = "<group>"; };
-		DC7B9DA329C89B6300DECDB5 /* OpenSans-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-SemiBold.ttf"; sourceTree = "<group>"; };
-		DC7B9DA429C89B6300DECDB5 /* OpenSans-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-ExtraBold.ttf"; sourceTree = "<group>"; };
-		DC7B9DA529C89B6300DECDB5 /* OpenSans-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Bold.ttf"; sourceTree = "<group>"; };
-		DC7B9DA629C89B6300DECDB5 /* OpenSans-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Medium.ttf"; sourceTree = "<group>"; };
-		DC7B9DA729C89B6300DECDB5 /* OpenSans-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "OpenSans-Regular.ttf"; sourceTree = "<group>"; };
 		DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		DC7B9DB029C89C4800DECDB5 /* HomeBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBuilder.swift; sourceTree = "<group>"; };
 		DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
@@ -73,6 +70,13 @@
 		DC7B9DBF29C9B8A400DECDB5 /* HomeTableCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "HomeTableCell+Extension.swift"; sourceTree = "<group>"; };
 		DC7B9DC629CA3E5900DECDB5 /* DetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewModel.swift; sourceTree = "<group>"; };
 		DC7B9DC929CA471E00DECDB5 /* DetailControllerBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailControllerBuilder.swift; sourceTree = "<group>"; };
+		DC7B9DCB29CA525B00DECDB5 /* DetailController+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DetailController+Extension.swift"; sourceTree = "<group>"; };
+		DC7B9DCD29CAC6E200DECDB5 /* Inter-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Regular.ttf"; sourceTree = "<group>"; };
+		DC7B9DCE29CAC6E200DECDB5 /* Inter-ExtraBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-ExtraBold.ttf"; sourceTree = "<group>"; };
+		DC7B9DCF29CAC6E200DECDB5 /* Inter-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Bold.ttf"; sourceTree = "<group>"; };
+		DC7B9DD029CAC6E200DECDB5 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
+		DC7B9DD129CAC6E200DECDB5 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
+		DC7B9DD729CAC9F200DECDB5 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +197,8 @@
 				DC7B9DB229C8B5F400DECDB5 /* UIColor+Extension.swift */,
 				DC7B9DB829C8DB1700DECDB5 /* UIViewController+Extension.swift */,
 				DC7B9DBF29C9B8A400DECDB5 /* HomeTableCell+Extension.swift */,
+				DC7B9DCB29CA525B00DECDB5 /* DetailController+Extension.swift */,
+				DC7B9DD729CAC9F200DECDB5 /* Custom.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -279,11 +285,11 @@
 		DC7B9DA229C89B6300DECDB5 /* fonts */ = {
 			isa = PBXGroup;
 			children = (
-				DC7B9DA329C89B6300DECDB5 /* OpenSans-SemiBold.ttf */,
-				DC7B9DA429C89B6300DECDB5 /* OpenSans-ExtraBold.ttf */,
-				DC7B9DA529C89B6300DECDB5 /* OpenSans-Bold.ttf */,
-				DC7B9DA629C89B6300DECDB5 /* OpenSans-Medium.ttf */,
-				DC7B9DA729C89B6300DECDB5 /* OpenSans-Regular.ttf */,
+				DC7B9DCF29CAC6E200DECDB5 /* Inter-Bold.ttf */,
+				DC7B9DCE29CAC6E200DECDB5 /* Inter-ExtraBold.ttf */,
+				DC7B9DD129CAC6E200DECDB5 /* Inter-Medium.ttf */,
+				DC7B9DCD29CAC6E200DECDB5 /* Inter-Regular.ttf */,
+				DC7B9DD029CAC6E200DECDB5 /* Inter-SemiBold.ttf */,
 			);
 			path = fonts;
 			sourceTree = "<group>";
@@ -396,12 +402,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DC7B9DA929C89B6300DECDB5 /* OpenSans-SemiBold.ttf in Resources */,
 				DC7B9D6529C88A9000DECDB5 /* LaunchScreen.storyboard in Resources */,
-				DC7B9DAB29C89B6300DECDB5 /* OpenSans-Bold.ttf in Resources */,
-				DC7B9DAC29C89B6300DECDB5 /* OpenSans-Medium.ttf in Resources */,
-				DC7B9DAD29C89B6300DECDB5 /* OpenSans-Regular.ttf in Resources */,
-				DC7B9DAA29C89B6300DECDB5 /* OpenSans-ExtraBold.ttf in Resources */,
+				DC7B9DD329CAC6E200DECDB5 /* Inter-ExtraBold.ttf in Resources */,
+				DC7B9DD529CAC6E200DECDB5 /* Inter-SemiBold.ttf in Resources */,
+				DC7B9DD429CAC6E200DECDB5 /* Inter-Bold.ttf in Resources */,
+				DC7B9DD629CAC6E200DECDB5 /* Inter-Medium.ttf in Resources */,
+				DC7B9DD229CAC6E200DECDB5 /* Inter-Regular.ttf in Resources */,
 				DC7B9DAE29C89B6300DECDB5 /* Colors.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -415,6 +421,7 @@
 			files = (
 				DC7B9D9A29C897A400DECDB5 /* DetailController.swift in Sources */,
 				DC7B9DB529C8C42800DECDB5 /* PokemonModel.swift in Sources */,
+				DC7B9DD829CAC9F200DECDB5 /* Custom.swift in Sources */,
 				DC7B9D8829C8941600DECDB5 /* Snapkit.swift in Sources */,
 				DC7B9DBC29C8E29900DECDB5 /* HomeViewModel.swift in Sources */,
 				DC7B9DB929C8DB1700DECDB5 /* UIViewController+Extension.swift in Sources */,
@@ -428,6 +435,7 @@
 				DC7B9D8229C88D1100DECDB5 /* HomeController.swift in Sources */,
 				DC7B9DC029C9B8A400DECDB5 /* HomeTableCell+Extension.swift in Sources */,
 				DC7B9D9F29C898E000DECDB5 /* Service.swift in Sources */,
+				DC7B9DCC29CA525B00DECDB5 /* DetailController+Extension.swift in Sources */,
 				DC7B9DB729C8C6EC00DECDB5 /* HomeTableCell.swift in Sources */,
 				DC7B9D7C29C88C9F00DECDB5 /* BaseConstant.swift in Sources */,
 				DC7B9D5B29C88A8E00DECDB5 /* SceneDelegate.swift in Sources */,

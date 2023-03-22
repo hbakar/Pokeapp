@@ -105,14 +105,20 @@ extension HomeController:tableViewDelegate
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
+     
         guard let cell: HomeTableCell = tableView.dequeueReusableCell(withIdentifier: HomeTableCell.Identifier.custom.rawValue, for: indexPath) as? HomeTableCell else { return UITableViewCell() }
+        
+        cell.backgroundColor = .gray01
+        
+        Utils.animate(cell, indexPath)
+        
         viewModel.isSearch ? cell.saveModel(model: viewModel.searchData[indexPath.row])
                : cell.saveModel(model: viewModel.pokemons[indexPath.row])
         return cell
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 180
+        return 125
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -142,7 +148,6 @@ extension HomeController:tableViewDelegate
 extension HomeController
 {
     private func fetchData() {
-        
         // limit 2 default
         viewModel?.fetchPokemons(onSuccess: { [weak self] data in
             guard let data = data?.results else {return}

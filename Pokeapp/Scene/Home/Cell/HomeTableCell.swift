@@ -19,6 +19,7 @@ class HomeTableCell: UITableViewCell {
     private var img : UIImageView = {
         let imgV = UIImageView()
         imgV.homeCellImage()
+        imgV.hero.id = "imageView"
         return imgV
     }()
     
@@ -82,18 +83,18 @@ private extension HomeTableCell {
     
     func makeCellImage() {
         img.snp.makeConstraints { make in
-            make.right.equalToSuperview().inset(16.18)
-            make.height.equalTo(160)
-            make.width.equalTo(160)
-            make.center.equalToSuperview()        }
+            make.left.equalToSuperview().inset(16.18)
+            //make.right.equalToSuperview().inset(16.18)
+            make.height.equalTo(120)
+            make.width.equalTo(120)
+          make.centerY.equalToSuperview()        }
     }
     
     func makeCellLabel(){
         lblName.snp.makeConstraints { make in
-            make.right.equalToSuperview().offset(-16.18)
-            make.left.equalToSuperview().inset(16.18)
+            make.right.equalToSuperview().inset(16.18)
+            make.left.equalTo(self.img.snp.right).offset(16.18)
             make.top.equalTo(img.snp.top)
-          
         }
     }
     
