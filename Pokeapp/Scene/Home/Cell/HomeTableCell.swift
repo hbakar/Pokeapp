@@ -94,7 +94,7 @@ private extension HomeTableCell {
         lblName.snp.makeConstraints { make in
             make.right.equalToSuperview().inset(16.18)
             make.left.equalTo(self.img.snp.right).offset(16.18)
-            make.top.equalTo(img.snp.top)
+            make.centerY.equalToSuperview()
         }
     }
     

@@ -13,15 +13,19 @@ final class DetailController: UIViewController {
 
   
     public var result: Result!
-    
     var viewModel : DetailViewModelProtocol!    // - MARK: UI Elements
-    
     private var abilityList : [Ability] = []
    
     private var img : UIImageView = {
         let imgV = UIImageView()
         imgV.detailCellImage()
         return imgV
+    }()
+    
+    private var rightArrow: UIImageView = {
+        let img = UIImageView()
+        img.detailIconImage()
+        return img
     }()
     
     private let lblTitle: UILabel = {
@@ -44,20 +48,18 @@ final class DetailController: UIViewController {
         return stView
     }()
     
-    // - MARK: Life Cycle
+    // MARK: - Life Cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        
-        
         configure()
-        
         fetchData()
-        
     }
     
     override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        setGradient()
+        
         
     }
     
@@ -80,7 +82,7 @@ extension DetailController
     }
 }
 
-// - MARK: View Extensions
+// MARK: - View Extensions
 extension DetailController
 {
     private func configure() {
@@ -103,9 +105,9 @@ extension DetailController
     private func setupImageView()
     {
         img.snp.makeConstraints { make in
-            make.leading.equalTo(self.view.snp.leading)
-            make.trailing.equalTo(self.view.snp.trailing)
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(10)
+            make.leading.equalTo(self.view.snp.leading).inset(16.18)
+            make.trailing.equalTo(self.view.snp.trailing).offset(-16.18)
+            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(16.18)
             make.height.equalTo(300)
         }
         
@@ -117,17 +119,17 @@ extension DetailController
             make.top.equalTo(self.img.snp.bottom).offset(16.18)
         }
         
-        
-        
-        /*
-        lblName.snp.makeConstraints { make in
-            make.left.equalToSuperview().inset(16.18)
-            make.right.equalToSuperview().inset(16.18)
-            make.top.equalTo(16.18)
-        }
-         */
-      
-      
+       
+    }
+    
+    private func setGradient()
+    {
+        let gradient = CAGradientLayer()
+        gradient.frame = img.bounds
+        let startColor = UIColor(red: 30/255, green: 113/255, blue: 79/255, alpha: 0).cgColor
+        let endColor = UIColor(red: 0, green: 0, blue: 0, alpha: 1).cgColor
+        gradient.colors = [startColor, endColor]
+        img.layer.insertSublayer(gradient, at: 0)
     }
 }
 
@@ -166,37 +168,20 @@ extension DetailController
                             label.text = _name
                             
                             label.detailLabel()
+                            
                             self?.stViewAbilities.addArrangedSubview(label)
                         }
                     }
-                    
-                    
                    
                 }
-               
-                
-             
-              
-                
                 if let poster = data?.sprites?.frontDefault
                 {
-                    
                     print(poster)
-                    
                     let url = URL(string: poster)!
                     self!.img.kf.setImage(with: url)
-                    
-                  //  imgView.kf.setImage(with: poster)!
-                    
-                   // imgView.kf.setImage(with: poster)
                 }
-                
-             
             }, onError: { error in
                 print(error)
             }, "pikachu")
-       
-        
-     
     }
 }

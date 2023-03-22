@@ -43,6 +43,8 @@
 		DC7B9DD529CAC6E200DECDB5 /* Inter-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DD029CAC6E200DECDB5 /* Inter-SemiBold.ttf */; };
 		DC7B9DD629CAC6E200DECDB5 /* Inter-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DD129CAC6E200DECDB5 /* Inter-Medium.ttf */; };
 		DC7B9DD829CAC9F200DECDB5 /* Custom.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC7B9DD729CAC9F200DECDB5 /* Custom.swift */; };
+		DC7B9DDA29CAE1CE00DECDB5 /* arrow-square-right.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DD929CAE1CE00DECDB5 /* arrow-square-right.pdf */; };
+		DC7B9DDC29CAE3A500DECDB5 /* star.pdf in Resources */ = {isa = PBXBuildFile; fileRef = DC7B9DDB29CAE3A500DECDB5 /* star.pdf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -77,6 +79,8 @@
 		DC7B9DD029CAC6E200DECDB5 /* Inter-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-SemiBold.ttf"; sourceTree = "<group>"; };
 		DC7B9DD129CAC6E200DECDB5 /* Inter-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Inter-Medium.ttf"; sourceTree = "<group>"; };
 		DC7B9DD729CAC9F200DECDB5 /* Custom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Custom.swift; sourceTree = "<group>"; };
+		DC7B9DD929CAE1CE00DECDB5 /* arrow-square-right.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = "arrow-square-right.pdf"; sourceTree = "<group>"; };
+		DC7B9DDB29CAE3A500DECDB5 /* star.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = star.pdf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -222,6 +226,8 @@
 		DC7B9D8929C8944A00DECDB5 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				DC7B9DDB29CAE3A500DECDB5 /* star.pdf */,
+				DC7B9DD929CAE1CE00DECDB5 /* arrow-square-right.pdf */,
 				DC7B9DA829C89B6300DECDB5 /* Colors.xcassets */,
 				DC7B9DA229C89B6300DECDB5 /* fonts */,
 			);
@@ -404,11 +410,13 @@
 			files = (
 				DC7B9D6529C88A9000DECDB5 /* LaunchScreen.storyboard in Resources */,
 				DC7B9DD329CAC6E200DECDB5 /* Inter-ExtraBold.ttf in Resources */,
+				DC7B9DDA29CAE1CE00DECDB5 /* arrow-square-right.pdf in Resources */,
 				DC7B9DD529CAC6E200DECDB5 /* Inter-SemiBold.ttf in Resources */,
 				DC7B9DD429CAC6E200DECDB5 /* Inter-Bold.ttf in Resources */,
 				DC7B9DD629CAC6E200DECDB5 /* Inter-Medium.ttf in Resources */,
 				DC7B9DD229CAC6E200DECDB5 /* Inter-Regular.ttf in Resources */,
 				DC7B9DAE29C89B6300DECDB5 /* Colors.xcassets in Resources */,
+				DC7B9DDC29CAE3A500DECDB5 /* star.pdf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

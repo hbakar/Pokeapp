@@ -106,6 +106,10 @@ extension HomeController:tableViewDelegate
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
      
      
+        /*
+         infinite list & offset değeri (backend) daha sonra eklenecektir.
+        */
+        
         guard let cell: HomeTableCell = tableView.dequeueReusableCell(withIdentifier: HomeTableCell.Identifier.custom.rawValue, for: indexPath) as? HomeTableCell else { return UITableViewCell() }
         
         cell.backgroundColor = .gray01
